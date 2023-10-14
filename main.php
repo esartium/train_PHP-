@@ -220,7 +220,7 @@ function vivod ($par) {
 vivod($res2);
 vivod($res3);
 
-
+echo '!' . '<br>';
 
 
 
