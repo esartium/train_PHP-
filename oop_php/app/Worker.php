@@ -4,13 +4,22 @@ namespace App;
 
 class Worker 
 {
-    //Свойства:
     public string $name;
+    public int $age;
+    public array $hours;
 
-    //Методы:
-    public function work() {
-        print_r('мяу');
+    public function __construct($name, $age, $hours) {
+        $this->name = $name;
+        $this->age = $age;
+        $this->hours = $hours;
+        echo $name . '/' . $age . '/' . '<br>';
+        print_r($hours);
     }
+
+    public function work() {
+        echo 'мяу' . '<br>';
+    }
+    
 }
 
 
